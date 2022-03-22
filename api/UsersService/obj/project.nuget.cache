@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NjMcAj8z8MKzQ2naa56wxlmfWuE4yhOouQWM91JgjXxB4nfkjGIfWjiHclavRAE/q4hOgO7mzLBdN39xzMlgLg==",
+  "dgSpecHash": "GbNiQV5W1lH+bzoJQWepYQ7UFX8wMpZbnH9vovmEDYAmwj3IXBAruBXVogjmYd4oLwrWv9//HfQ0i19W8DLbJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\UsersService.csproj",
+  "projectFilePath": "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\UsersService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pokr003\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
@@ -11,6 +11,7 @@
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.0\\microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
+    "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\pokr003\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

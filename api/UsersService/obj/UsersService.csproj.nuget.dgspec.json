@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\UsersService.csproj": {}
+    "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\UsersService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\UsersService.csproj": {
+    "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\UsersService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\UsersService.csproj",
+        "projectUniqueName": "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\UsersService.csproj",
         "projectName": "UsersService",
-        "projectPath": "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\UsersService.csproj",
+        "projectPath": "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\UsersService.csproj",
         "packagesPath": "C:\\Users\\pokr003\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pokr003\\Documents\\Projects\\social-network\\api\\UsersService\\obj\\",
+        "outputPath": "C:\\Users\\pokr003\\Source\\Repos\\vitalii-pokrivchak\\social-network\\api\\UsersService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pokr003\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
               "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
