@@ -1,5 +1,6 @@
-.vscode
-.idea
-/**/bin
+/**/.vscode
 /**/node_modules
-.vs
+/**/bin
+/**/obj
+/**/.vs
+/**/.idea
