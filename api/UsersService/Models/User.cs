@@ -19,5 +19,6 @@ namespace UsersService.Models
         [Required]
         public string? PhotoUrl { get; set; }
         public DateTime JoinedAt { get; set; }
+        public List<RefreshToken>? RefreshTokens { get; set; }
     }
 }

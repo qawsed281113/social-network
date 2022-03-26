@@ -1,11 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UsersService.Configuration;
 
 namespace UsersService.Controllers
 {
     [ApiController]
     [Route("users")]
-    public class UsersController: ControllerBase
+    public class UsersController : ControllerBase
     {
+        private readonly AuthOptions options;
+        public UsersController(AuthOptions options)
+        {
+            this.options = options;
+        }
+
         [HttpPost("register")]
         public IActionResult Register()
         {
@@ -32,6 +39,7 @@ namespace UsersService.Controllers
             // TODO: Зробити логіку отримання приватної інформації (Name, Email , Password, Login , PhotoUrl)
             return Ok(new
             {
+                email = User.Identity?.Name,
                 msg = "Not Implemented"
             });
         }
@@ -42,7 +50,7 @@ namespace UsersService.Controllers
             // TODO: Зробити логіку отримання публічної інформації про користувача (Email , Name , PhotoUrl)
             return Ok(new
             {
-                msg = "Not implemented", 
+                msg = "Not implemented",
                 login
             });
         }
