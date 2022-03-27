@@ -1,0 +1,26 @@
+version: '3.9'
+services:  
+  db: 
+    container_name: sn-users-db
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    networks:
+      - app-network
+    environment:
+      - POSTGRES_PASSWORD=social_2580
+  app:
+    container_name: sn-users
+    build: .
+    ports:
+      - 5001:80
+    networks:
+      - app-network
+    depends_on:
+      - db
+    links:
+      - db
+networks:
+  app-network:
+    driver: bridge
