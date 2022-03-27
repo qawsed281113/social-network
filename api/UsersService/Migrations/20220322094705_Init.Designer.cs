@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using UsersService.Data;
@@ -11,9 +12,10 @@ using UsersService.Data;
 namespace UsersService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220322094705_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,32 +23,6 @@ namespace UsersService.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("UsersService.Models.RefreshToken", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<bool>("Blocked")
-                        .HasColumnType("boolean");
-
-                    b.Property<DateTime>("ExpiredAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("IP")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Tokens");
-                });
 
             modelBuilder.Entity("UsersService.Models.User", b =>
                 {
@@ -80,18 +56,6 @@ namespace UsersService.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("UsersService.Models.RefreshToken", b =>
-                {
-                    b.HasOne("UsersService.Models.User", null)
-                        .WithMany("RefreshTokens")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("UsersService.Models.User", b =>
-                {
-                    b.Navigation("RefreshTokens");
                 });
 #pragma warning restore 612, 618
         }

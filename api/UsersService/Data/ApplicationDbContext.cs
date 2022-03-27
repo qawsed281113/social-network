@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using UsersService.Models;
 
-namespace UserService.Data
+namespace UsersService.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -8,5 +9,8 @@ namespace UserService.Data
         {
 
         }
+
+        public DbSet<User>? Users { get; set; }
+        public DbSet<RefreshToken>? Tokens { get; set; }
     }
 }
