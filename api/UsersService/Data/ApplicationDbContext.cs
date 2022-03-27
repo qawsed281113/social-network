@@ -7,7 +7,7 @@ namespace UsersService.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
+            this.Database.Migrate();
         }
 
         public DbSet<User>? Users { get; set; }
