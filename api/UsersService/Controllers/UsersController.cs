@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using UsersService.Configuration;
+using UsersService.Data;
 
 namespace UsersService.Controllers
 {
@@ -7,10 +9,12 @@ namespace UsersService.Controllers
     [Route("users")]
     public class UsersController : ControllerBase
     {
-        private readonly AuthOptions options;
-        public UsersController(AuthOptions options)
+        private readonly AuthOptions _options;
+        private readonly ApplicationDbContext _context;
+        public UsersController(AuthOptions options, ApplicationDbContext context)
         {
-            this.options = options;
+            _options = options;
+            _context = context;
         }
 
         [HttpPost("register")]
