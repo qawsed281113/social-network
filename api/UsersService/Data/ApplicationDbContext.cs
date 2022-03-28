@@ -10,7 +10,7 @@ namespace UsersService.Data
             this.Database.Migrate();
         }
 
-        public DbSet<User>? Users { get; set; }
-        public DbSet<RefreshToken>? Tokens { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<RefreshToken> Tokens { get; set; }
     }
 }

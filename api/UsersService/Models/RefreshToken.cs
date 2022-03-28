@@ -8,7 +8,7 @@ namespace UsersService.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
         [Required]
-        public string? IP { get; set; }
+        public string IP { get; set; }
         public bool Blocked { get; set; } = false;
         [Required]
         public DateTime ExpiredAt { get; set; }
