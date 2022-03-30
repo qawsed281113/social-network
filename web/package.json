@@ -2,7 +2,7 @@
   "name": "web",
   "private": true,
   "scripts": {
-    "build": "npx tailwindcss -i ./wwwroot/css/tailwind.css -o ./wwwroot/css/main.css",
+    "build": "npx tailwindcss -i ./wwwroot/css/tailwind.css -o ./wwwroot/css/main.css -m",
     "watch": "npx tailwindcss -i ./wwwroot/css/tailwind.css -o ./wwwroot/css/main.css --watch"
   },
   "devDependencies": {
